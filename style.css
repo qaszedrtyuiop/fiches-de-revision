@@ -206,3 +206,10 @@ button:focus { outline: none; box-shadow: 0 10px 30px rgba(124,58,237,0.12); }
     .fiche { grid-template-columns: 1fr; }
     .fiche .aside { order:2; }
 }
+
+/* Landing CTA and footer */
+.large-btn { display:inline-block; padding: 16px 22px; font-size:18px; border-radius: 12px; text-decoration:none; color: white; background: var(--accent-grad); box-shadow: 0 12px 36px rgba(124,58,237,0.10); }
+.large-btn:hover { transform: translateY(-3px); }
+.site-footer { text-align: center; color: var(--muted); margin-top: 18px; font-size: 13px; }
+
+
