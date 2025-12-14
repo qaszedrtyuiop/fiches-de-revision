@@ -273,3 +273,4 @@ document.addEventListener('DOMContentLoaded', () => {
         inputEl.placeholder = 'Colle ton cours ici (ou dépose un fichier .txt). Exemple :\n\nCHAPITRE 1\nDéfinition: La photosynthèse est le processus ...';
     }
 });
+
