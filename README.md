@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/24151478/README.md)
 # Générateur de Fiches de Révision
 
 Petit outil front-end pour créer des fiches de révision à partir d'un cours collé ou importé en `.txt`.
