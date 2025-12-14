@@ -3,60 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Générateur de Fiches de Révision</title>
+    <title>Fiches de Révision — Accueil</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a class="skip-link" href="#inputText">Aller à la zone de saisie</a>
     <div class="container">
-        <h1>Générateur de Fiches de Révision</h1>
+        <h1>Fiches de Révision</h1>
+        <p style="text-align:center; color:var(--muted); margin-top:6px;">Transforme ton cours en une fiche claire et imprimable en quelques secondes.</p>
 
-        <div class="controls" aria-label="Importer un fichier">
-            <label for="fileInput">Importer un fichier (.txt, .pdf) :</label>
-            <input aria-label="Importer un fichier cours" type="file" id="fileInput" accept=".txt, .pdf" />
+        <div style="display:flex; justify-content:center; margin-top:28px;">
+            <a href="fiche.html" class="primary large-btn" aria-label="Générer une fiche de révision">Générer une fiche de révision</a>
         </div>
 
-        <div class="editor">
-            <textarea id="inputText" aria-label="Zone de saisie du cours" placeholder="Colle ton cours ici..."></textarea>
+        <div style="text-align:center; margin-top:18px; color:var(--muted);">Ou ouvre directement <a href="fiche.html">l'éditeur</a>.</div>
 
-            <div class="options">
-                <label>Longueur du résumé :</label>
-                <select id="lengthSelect">
-                    <option value="short">Court</option>
-                    <option value="medium" selected>Moyen</option>
-                    <option value="long">Long</option>
-                </select>
-            </div>
-
-            <div class="actions">
-                <button id="generateBtn" aria-label="Créer la fiche" class="primary">Créer ma fiche</button>
-                <button id="copyBtn" aria-label="Copier la fiche" disabled>Copier</button>
-                <button id="printBtn" aria-label="Imprimer la fiche" disabled>Imprimer / Télécharger</button>
-            </div>
-        </div>
-
-        <section class="result">
-            <h2>Fiche de révision</h2>
-            <div id="output" class="output" role="region" aria-live="polite" tabindex="0"></div>
-        </section>
+        <footer class="site-footer">BY ALEX</footer>
     </div>
-
-    <script>
-        // Global JS error handler to show detailed syntax/run errors
-        window.addEventListener('error', function (e) {
-            const msg = `JS Error: ${e.message} (source: ${e.filename}:${e.lineno}:${e.colno})`;
-            console.error(msg, e.error);
-            alert(msg);
-        });
-    </script>
-
-    <!-- PDF.js for client-side PDF text extraction -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-    <script>
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
-    </script>
-
-    <script src="app.js"></script>
 </body>
 </html>
+
