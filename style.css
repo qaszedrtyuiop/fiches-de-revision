@@ -4,8 +4,8 @@ h1 {
 }
 
 body{
-background-color: #02A19D ;
-text-align: center;
+	background-color: #02A19D ;
+	text-align: center;
 
 }
 
@@ -14,11 +14,6 @@ img	{
 	margin: auto;
 	justify-content: space-around;
     width: 17vw;
-}
-
-.img-border-radius {
-  height: 200px;
-  border-radius: 20%;
 }
 
 #content {
